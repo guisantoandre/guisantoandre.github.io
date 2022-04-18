@@ -420,4 +420,30 @@ a {
 .idiomas h3::before {
   background: url("../img/icone-idiomas.svg") no-repeat center center;
 }
+
+@media (max-width: 900px) {
+  .bg-experiencias {
+    padding: 60px 0;
+  }
+  .exp-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .exp-container h2 {
+    word-break: none;
+    max-width: initial;
+    line-height: 0.9;
+    text-align: center;
+  }
+  .cursos h3::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
