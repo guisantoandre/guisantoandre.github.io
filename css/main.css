@@ -437,7 +437,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 1px solid #525252;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 
@@ -576,8 +575,8 @@ a {
 
 .hand {
   display: inline-block;
-  -webkit-animation: shake 0.8s ease alternate infinite;
-          animation: shake 0.8s ease alternate infinite;
+  -webkit-animation: shake 1.2s ease alternate infinite;
+          animation: shake 1.2s ease alternate infinite;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
