@@ -273,6 +273,9 @@ a {
 }
 
 @media (max-width: 900px) {
+  .sobre {
+    padding: 60px 20px;
+  }
   .detalhe1-sobre,
   .detalhe2-sobre {
     display: none;
@@ -335,7 +338,7 @@ a {
   background: #0d1117;
   color: #c2c0bf;
   padding: 12px 20px;
-  font-size: clamp(1.8rem, 2vw, 2.4rem);
+  font-size: 2.4rem;
   border-radius: 4px;
   position: relative;
   cursor: default;
@@ -436,6 +439,12 @@ a {
     line-height: 0.9;
     text-align: center;
   }
+  .tecnologias .itens li {
+    font-size: 1.8rem;
+  }
+  .tecnologias .itens li::before {
+    top: 15px;
+  }
   .cursos h3::before {
     content: "";
     display: block;
@@ -444,6 +453,82 @@ a {
     position: absolute;
     top: -25px;
     left: 0;
+  }
+}
+
+.footer {
+  background: #0d1117;
+  padding: 60px 0 0 0;
+}
+
+.footer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-bottom: 60px;
+  color: #f6f4f3;
+}
+
+.footer-container img {
+  width: 30px;
+}
+
+.footer-container p {
+  color: #c2c0bf;
+  max-width: 30ch;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.footer-container .redes-sociais a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  color: #c2c0bf;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-container .redes-sociais a:hover {
+  color: #f6f4f3;
+  text-decoration: underline;
+}
+
+.footer-container .redes-sociais a img {
+  width: 22px;
+}
+
+.copyright {
+  background: #0e0e0e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.copyright a {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 40px 0;
+  }
+  .footer-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+  .contato .redes-sociais a img {
+    width: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */
