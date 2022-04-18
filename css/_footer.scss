@@ -1,6 +1,6 @@
 .footer {
   background: $bg-intro;
-  padding: 60px 0 0 0;
+  padding: 60px 0;
 }
 
 .footer-container {
@@ -8,7 +8,6 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 60px;
   color: $white;
 
   img {
@@ -41,14 +40,48 @@
   }
 }
 
-.copyright {
-  background: #0e0e0e;
-  padding: 10px 0;
-  text-align: center;
+.btn-top {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  background: lightgreen;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  animation: arrow 0.8s ease alternate infinite;
+  transition: $transition;
 
-  a {
-    font-weight: 700;
-    font-size: clamp($t2, 3vw, $t3);
+  &:hover {
+    background: rgb(130, 226, 130);
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.hand {
+  display: inline-block;
+  animation: shake 0.8s ease alternate infinite;
+  transform-origin: bottom;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(20deg);
   }
 }
 

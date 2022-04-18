@@ -117,6 +117,16 @@
 
 .introducao .hero-img {
   z-index: 2;
+  animation: updown 2s ease alternate infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3%);
+  }
 }
 
 @media (max-width: 900px) {

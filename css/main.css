@@ -12,11 +12,14 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Barlow", sans-serif;
   background: #f7f7f7;
+  -webkit-animation: entrance 0.5s ease-in-out;
+          animation: entrance 0.5s ease-in-out;
 }
 
 .gradient {
@@ -62,6 +65,24 @@ a {
   text-decoration: none;
   color: #f6f4f3;
   display: inline-block;
+}
+
+@-webkit-keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bg-introducao {
@@ -200,6 +221,30 @@ a {
 
 .introducao .hero-img {
   z-index: 2;
+  -webkit-animation: updown 2s ease alternate infinite;
+          animation: updown 2s ease alternate infinite;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
 }
 
 @media (max-width: 900px) {
@@ -459,7 +504,7 @@ a {
 
 .footer {
   background: #0d1117;
-  padding: 60px 0 0 0;
+  padding: 60px 0;
 }
 
 .footer-container {
@@ -471,7 +516,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
-  margin-bottom: 60px;
   color: #f6f4f3;
 }
 
@@ -507,15 +551,79 @@ a {
   width: 22px;
 }
 
-.copyright {
-  background: #0e0e0e;
-  padding: 10px 0;
-  text-align: center;
+.btn-top {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  background: lightgreen;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-animation: arrow 0.8s ease alternate infinite;
+          animation: arrow 0.8s ease alternate infinite;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.copyright a {
-  font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+.btn-top:hover {
+  background: #82e282;
+}
+
+.btn-top img {
+  width: 30px;
+}
+
+.hand {
+  display: inline-block;
+  -webkit-animation: shake 0.8s ease alternate infinite;
+          animation: shake 0.8s ease alternate infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
 }
 
 @media (max-width: 900px) {

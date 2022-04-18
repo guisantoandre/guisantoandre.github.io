@@ -11,7 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="./script.js" defer></script>
   <link rel="stylesheet" href="./css/main.css">
+  <!-- AOS library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Arcode | Portifólio pessoal</title>
 </head>
 
@@ -31,11 +35,11 @@
     <section class="introducao container grid">
       <img src="./img/detalhe1.svg" alt="Detalhe 1" class="detalhe detalhe1">
       <div class="hero-text">
-        <h1>Desenvolvedor </br>Front End & </br>UX / UI Design</h1>
-        <p>Localizado em Brotas - SP &#128204;</p>
+        <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Desenvolvedor </br>Front End & </br>UX / UI Design</h1>
+        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600">Localizado em Brotas - SP &#128204;</p>
       </div>
 
-      <img src="./img/hero-img.svg" alt="Ilustração SVG desenvolvedor" class="hero-img" width="701" height="651">
+      <img src="./img/hero-img.svg" alt="Ilustração SVG desenvolvedor" class="hero-img" width="701" height="651" data-aos="fade-up">
       <img src="./img/detalhe2.svg" alt="Detalhe 1" class="detalhe detalhe2">
     </section>
     <img src="./img/detalhe4.svg" alt="Detalhe tag html" class="detalhe detalhe4">
@@ -43,19 +47,19 @@
 
   <section class="sobre container" id="sobre">
     <img src="./img/detalhe1-sobre.svg" alt="Detalhe seta section sobre" class="detalhe detalhe1-sobre">
-    <h2>SOBRE</h2>
+    <h2 class="maquina-escrever">SOBRE</h2>
 
     <div class="sobre-container grid">
-      <img src="./img/me.svg" alt="Foto pessoal minha" width="349" height="388">
+      <img src="./img/me.svg" alt="Foto pessoal minha" width="349" height="388" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
       <div class="sobre-text">
-        <p>Oi, meu nome é Guilherme, sou apaixonado por tecnologia e programação, desenvolvo pequenos projetos com foco em <strong>usabilidade</strong> e <strong>design</strong> utilizando <strong>HTML</strong>, <strong>Sass</strong> e <strong>JavaScript</strong>. Também me aventuro em outras tecnologias como <strong>Git</strong> e <strong>NodeJS</strong>.</p>
-        <p>Atento às novidades de mercado, busco sempre me atualizar e aprender coisas novas, gosto e tenho facilidade de ensinar e trabalhar em equipe.</p>
+        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">Oi, meu nome é Guilherme, sou apaixonado por tecnologia e programação, desenvolvo pequenos projetos com foco em <strong>usabilidade</strong> e <strong>design</strong> utilizando <strong>HTML</strong>, <strong>Sass</strong> e <strong>JavaScript</strong>. Também me aventuro em outras tecnologias como <strong>Git</strong> e <strong>NodeJS</strong>.</p>
+        <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Atento às novidades de mercado, busco sempre me atualizar e aprender coisas novas, gosto e tenho facilidade de ensinar e trabalhar em equipe.</p>
       </div>
     </div>
     <img src="./img/detalhe2-sobre.svg" alt="Detalhe seta section sobre" class="detalhe detalhe2-sobre">
   </section>
 
-  <section class="bg-experiencias" id="experiencas">
+  <section class="bg-experiencias" id="experiencias">
     <div class="exp-container container grid">
       <h2>EXPERIÊNCIA</h2>
       <div class="experiencias">
@@ -94,7 +98,7 @@
 
   <footer class="footer" id="contato">
     <div class="footer-container container">
-      <p>Estou disponível para novos projetos ou trabalho. Entre em contato comigo e marcamos uma conversa. 👋</p>
+      <p>Estou disponível para novos projetos ou trabalho. Entre em contato comigo e marcamos uma conversa. <span class="hand">👋</span></p>
       <div class="contato">
         <div class="redes-sociais">
           <a href="mailto: gui.santoandre@gmail.com" class="email"><img src="./img/email.svg" alt="Ícone email" width="22" height="22"> gui.santoandre@gmail.com</a>
@@ -103,13 +107,14 @@
         </div>
       </div>
     </div>
-
-    <div class="copyright">
-      <a href="#home">
-        <p class="gradient">&lt; / &gt;</p>
-      </a>
-    </div>
+    <a href="#home" class="btn-top"><img src="./img/arrow-top.svg" alt="Ícone seta pra cima" width="24" height="24"></a>
   </footer>
+
+  <!-- AOS library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

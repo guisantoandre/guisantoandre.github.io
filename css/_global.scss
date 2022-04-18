@@ -26,11 +26,13 @@ $transition: all 0.3s ease;
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: $barlow;
   background: #f7f7f7;
+  animation: entrance 0.5s ease-in-out;
 }
 
 .gradient {
@@ -72,4 +74,13 @@ a {
   text-decoration: none;
   color: $white;
   display: inline-block;
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
