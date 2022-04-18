@@ -5,10 +5,14 @@ $t2: 1.8rem;
 $t3: 2.4rem;
 $t4: 4.8rem;
 $t5: 7.2rem;
+$t6: 14rem;
 $experiencias: 14.4rem;
 $white: #f6f4f3;
 $grey1: #c2c0bf;
+$grey2: #a8a7a6;
 $bg-intro: #0d1117;
+$bg-experiencas: #21262d;
+$experiencia-texto: #161b22;
 $transition: all 0.3s ease;
 
 /* All resets, font and color styles */
@@ -17,6 +21,7 @@ $transition: all 0.3s ease;
 *::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -25,6 +30,7 @@ html {
 
 body {
   font-family: $barlow;
+  background: #f7f7f7;
 }
 
 .gradient {
@@ -49,7 +55,7 @@ body {
 
 .detalhe {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 img {

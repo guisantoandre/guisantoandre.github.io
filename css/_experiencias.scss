@@ -1,0 +1,120 @@
+.bg-experiencias {
+  background: $bg-experiencas;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.exp-container {
+  padding: 0 20px;
+
+  h2 {
+    color: $experiencia-texto;
+    font-size: clamp($t4, 12vw, $t6);
+    word-break: break-all;
+    max-width: 4ch;
+    line-height: 0.9;
+  }
+}
+
+.tecnologias {
+  margin-bottom: 60px;
+
+  p {
+    font-size: clamp($t1, 2vw, $t2);
+    color: $grey2;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+      background: #0d1117;
+      color: $grey1;
+      padding: 12px 20px;
+      font-size: clamp($t2, 2vw, $t3);
+      border-radius: 4px;
+      position: relative;
+      cursor: default;
+      transition: 0.1s ease;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 15px;
+        width: 1px;
+        background: linear-gradient(180deg, #fcb526 0%, #ff850a 100%);
+        position: absolute;
+        left: -1px;
+        top: 20px;
+        transition: 0.1s ease;
+      }
+    }
+  }
+}
+.tecnologias li:hover {
+  color: $white;
+}
+.tecnologias li:hover::before {
+  left: -3px;
+  width: 3px;
+}
+
+.cursos {
+  h3 {
+    font-size: clamp($t1, 2vw, $t2);
+    color: $grey2;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+  }
+}
+
+.intensivos {
+  margin-bottom: 60px;
+
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #525252;
+    font-size: clamp($t2, 3vw, $t3);
+  }
+
+  ul li span {
+    color: $grey2;
+  }
+}
+
+.idiomas {
+  ul li {
+    font-size: clamp($t2, 3vw, $t3);
+  }
+
+  ul li span {
+    color: $grey2;
+  }
+}
+
+.cursos h3::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  left: -34px;
+}
+
+.intensivos h3::before {
+  background: url("../img/icone-cursos.svg") no-repeat center center;
+}
+.idiomas h3::before {
+  background: url("../img/icone-idiomas.svg") no-repeat center center;
+}

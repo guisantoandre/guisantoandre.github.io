@@ -1,6 +1,5 @@
 .bg-introducao {
   background: $bg-intro;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 
@@ -59,18 +58,17 @@
 /* ### Introdução ### */
 .introducao {
   padding: 0 20px;
-  // margin-top: 4rem;
-  height: 88%;
+  margin: 50px auto;
   position: relative;
 
   .detalhe1 {
-    top: 30px;
+    top: 0;
     left: 20px;
     width: 73px;
   }
 
   .detalhe2 {
-    bottom: 30px;
+    bottom: 0;
     right: 30px;
     width: 73px;
   }
@@ -117,7 +115,7 @@
   }
 }
 
-.introducao img {
+.introducao .hero-img {
   z-index: 2;
 }
 
@@ -132,6 +130,10 @@
     justify-items: center;
     padding: 40px 0;
     height: 81%;
+  }
+
+  .introducao .hero-img {
+    width: 90%;
   }
 }
 

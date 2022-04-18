@@ -1,0 +1,47 @@
+.sobre {
+  padding: 100px 20px;
+  position: relative;
+
+  .detalhe1-sobre {
+    width: 73px;
+  }
+
+  .detalhe2-sobre {
+    width: 73px;
+    bottom: 100px;
+    right: 18px;
+  }
+
+  h2 {
+    font-size: clamp($t4, 5vw, $t5);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.sobre-text {
+  font-size: $t3;
+
+  p {
+    margin-bottom: 10px;
+    font-size: clamp($t2, 2vw, $t3);
+  }
+}
+
+@media (max-width: 900px) {
+  .detalhe1-sobre,
+  .detalhe2-sobre {
+    display: none;
+  }
+
+  .sobre-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .sobre-container img {
+    width: 55%;
+    order: 1;
+  }
+}
