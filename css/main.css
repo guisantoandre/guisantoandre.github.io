@@ -574,8 +574,8 @@ a {
 
 .hand {
   display: inline-block;
-  -webkit-animation: shake 1.2s ease alternate infinite;
-          animation: shake 1.2s ease alternate infinite;
+  -webkit-animation: shake 1s ease alternate infinite;
+          animation: shake 1s ease alternate infinite;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
