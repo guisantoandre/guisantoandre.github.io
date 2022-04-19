@@ -33,7 +33,7 @@
   z-index: 3;
 
   li a {
-    font-size: $t1;
+    font-size: clamp($t1, 3vw, $t2);
     color: $grey1;
     transition: $transition;
 
