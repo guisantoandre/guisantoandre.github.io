@@ -117,7 +117,7 @@
 
 .introducao .hero-img {
   z-index: 2;
-  animation: updown 4s ease alternate infinite;
+  animation: updown 3s ease alternate infinite;
 }
 
 @keyframes updown {
@@ -125,7 +125,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(3%);
+    transform: translateY(4%);
   }
 }
 
