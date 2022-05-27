@@ -58,7 +58,7 @@
 /* ### Introdução ### */
 .introducao {
   padding: 0 20px;
-  margin: 20px auto;
+  margin: 15px auto;
   position: relative;
 
   .detalhe1 {
@@ -117,7 +117,7 @@
 
 .introducao .hero-img {
   z-index: 2;
-  animation: updown 3s ease alternate infinite;
+  animation: updown 4s ease alternate infinite;
 }
 
 @keyframes updown {
