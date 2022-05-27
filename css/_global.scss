@@ -76,6 +76,10 @@ a {
   display: inline-block;
 }
 
+span.grey {
+  color: $grey2;
+}
+
 @keyframes entrance {
   0% {
     opacity: 0;

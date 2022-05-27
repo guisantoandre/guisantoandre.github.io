@@ -87,19 +87,11 @@
     // border-bottom: 1px solid #525252;
     font-size: clamp($t2, 3vw, $t3);
   }
-
-  ul li span {
-    color: $grey2;
-  }
 }
 
 .idiomas {
   ul li {
     font-size: clamp($t2, 3vw, $t3);
-  }
-
-  ul li span {
-    color: $grey2;
   }
 }
 
